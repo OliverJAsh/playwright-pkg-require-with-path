@@ -1,3 +1,10 @@
+// ❌ Using path, it doesn't work.
+import * as x from 'app/my-pkg';
+// ✅ Not using path, it works.
+// import * as x from '../app/my-pkg';
+
+console.log(x);
+
 import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
